@@ -41,8 +41,16 @@ button {
 	transition: background-color 0.3s ease;
 }
 
+#reset-button {
+	background-color: rgb(212, 89, 89);
+}
+
 button:hover {
 	background-color: #2e8baf;
+}
+
+#reset-button:hover {
+	background-color: rgb(94, 57, 57);
 }
 
 ul {

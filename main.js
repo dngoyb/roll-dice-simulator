@@ -1,4 +1,5 @@
 const buttonEl = document.getElementById('roll-button');
+const resetDice = document.getElementById('reset-button');
 const diceEl = document.getElementById('dice');
 const rollHistoryEl = document.getElementById('roll-history');
 
@@ -51,4 +52,10 @@ buttonEl.addEventListener('click', () => {
 		diceEl.classList.remove('roll-animation');
 		rollDice();
 	}, 1000);
+});
+
+resetDice.addEventListener('click', () => {
+	historyList.length = 0;
+	rollHistoryEl.innerHTML = '';
+	diceEl.innerHTML = '&#9860;';
 });
